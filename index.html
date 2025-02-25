@@ -135,6 +135,16 @@
                   <span>arXiv (Coming Soon)</span>
                 </a>
               </span>
+              <!-- Bilibili Link. -->
+              <span class="link-block">
+                <a href="https://www.bilibili.com/video/BV1TzKgeUEZD/"
+                    class="external-link button is-normal is-rounded is-dark" target="_blank">
+                    <span class="icon">
+                      <svg style="color: white"  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="currentColor" p-id="9618"><path d="M777.514667 131.669333a53.333333 53.333333 0 0 1 0 75.434667L728.746667 255.829333h49.92A160 160 0 0 1 938.666667 415.872v320a160 160 0 0 1-160 160H245.333333A160 160 0 0 1 85.333333 735.872v-320a160 160 0 0 1 160-160h49.749334L246.4 207.146667a53.333333 53.333333 0 1 1 75.392-75.434667l113.152 113.152c3.370667 3.370667 6.186667 7.04 8.448 10.965333h137.088c2.261333-3.925333 5.12-7.68 8.490667-11.008l113.109333-113.152a53.333333 53.333333 0 0 1 75.434667 0z m1.152 231.253334H245.333333a53.333333 53.333333 0 0 0-53.205333 49.365333l-0.128 4.010667v320c0 28.117333 21.76 51.157333 49.365333 53.162666l3.968 0.170667h533.333334a53.333333 53.333333 0 0 0 53.205333-49.365333l0.128-3.968v-320c0-29.44-23.893333-53.333333-53.333333-53.333334z m-426.666667 106.666666c29.44 0 53.333333 23.893333 53.333333 53.333334v53.333333a53.333333 53.333333 0 1 1-106.666666 0v-53.333333c0-29.44 23.893333-53.333333 53.333333-53.333334z m320 0c29.44 0 53.333333 23.893333 53.333333 53.333334v53.333333a53.333333 53.333333 0 1 1-106.666666 0v-53.333333c0-29.44 23.893333-53.333333 53.333333-53.333334z" p-id="9619"></path></svg>
+                    </span>
+                    <span>Bilibili</span>
+                </a>
+              </span>
               <!-- Video Link. -->
               <span class="link-block">
                 <a href="https://youtu.be/LjrStcDYn1M"
@@ -235,121 +245,280 @@
 <section class="hero teaser">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3" style="text-align: center;">Experiments</h2>
-      <h3 class="title is-4">Basic Fall Recovery</h3>
-      <div class="content has-text-centered">
-        <video id="prone-video" autoplay controls muted loop playsinline width="30%"
-          style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <source src="./static/videos/1_prone.mp4" type="video/mp4">
-          </video>
-          <video id="supine-video" autoplay controls muted loop playsinline width="30%"
+      <h2 class="title is-2" style="text-align: center;">Experiments</h2>
+      <h3 class="title is-3" style="text-align: center;">Basic Fall Recovery</h3>
+      <div class="columns is-centered">
+        <div class="column is-full-width is-centered has-text-centered">
+          <video id="prone-video" autoplay controls muted loop playsinline width="100%"
             style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <source src="./static/videos/1_supine.mp4" type="video/mp4">
+            <source src="./static/videos/1_prone.mp4" type="video/mp4">
           </video>
-          <video id="lateral-video" autoplay controls muted loop playsinline width="30%"
-            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <source src="./static/videos/1_lateral.mp4" type="video/mp4">
-          </video>
+          <div class="content is-two-third has-text-centered">
+            <p style="font-size: 1.2em; font-weight: bold;">
+              Prone recovery
+            </p>
           </div>
+        </div>
+        <div class="column is-full-width is-centered has-text-centered">
+          <video id="supine-video" autoplay controls muted loop playsinline width="100%"
+            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+            <source src="./static/videos/1_supine.mp4" type="video/mp4">
+          </video>
+          <div class="content is-two-third has-text-centered">
+            <p style="font-size: 1.2em; font-weight: bold;">
+              Supine recovery
+            </p>
+          </div>
+        </div>
+        <div class="column is-full-width is-centered has-text-centered">
+          <video id="lateral-video" autoplay controls muted loop playsinline width="100%"
+            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+            <source src="./static/videos/1_lateral.mp4" type="video/mp4">
+          </video>
+          <div class="content is-two-third has-text-centered">
+            <p style="font-size: 1.2em; font-weight: bold;">
+              Lateral recovery
+            </p>
+          </div>
+        </div>
+      </div>
       <br />
 
-      <h3 class="title is-4">Initial State</h3>
-      <div class="content has-text-centered">
-        <video id="lateral-video" autoplay controls muted loop playsinline width="30%"
-          style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <source src="./static/videos/2_leg.mp4" type="video/mp4">
-          </video>
-          <video id="prone-video" autoplay controls muted loop playsinline width="30%"
+      <h3 class="title is-3" style="text-align: center;">Initial State</h3>
+      <div class="columns is-centered">
+        <div class="column is-full-width is-centered has-text-centered">
+          <video id="cross-video" autoplay controls muted loop playsinline width="100%"
             style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <source src="./static/videos/2_lateral.mp4" type="video/mp4">
+            <source src="./static/videos/2_crossed_leg.mp4" type="video/mp4">
           </video>
-          <video id="supine-video" autoplay controls muted loop playsinline width="30%"
-            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <source src="./static/videos/2_lateral2.mp4" type="video/mp4">
-          </video>
-          <video id="lateral-video" autoplay controls muted loop playsinline width="30%"
-            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <source src="./static/videos/2_crossed_leg.mp4" type="video/mp4">
-          </video>
-          <video id="prone-video" autoplay controls muted loop playsinline width="30%"
-            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <source src="./static/videos/2_crossed_leg2.mp4" type="video/mp4">
-          </video>
-          <video id="supine-video" autoplay controls muted loop playsinline width="30%"
-            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <source src="./static/videos/2_sit.mp4" type="video/mp4">
-          </video>
+          <div class="content is-two-third has-text-centered">
+            <p style="font-size: 1.2em; font-weight: bold;">
+              Legs crossed
+            </p>
           </div>
+        </div>
+        <div class="column is-full-width is-centered has-text-centered">
+          <video id="cross-video-2" autoplay controls muted loop playsinline width="100%"
+            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+            <source src="./static/videos/2_crossed_leg2.mp4" type="video/mp4">
+          </video>
+          <div class="content is-two-third has-text-centered">
+            <p style="font-size: 1.2em; font-weight: bold;">
+              Legs crossed
+            </p>
+          </div>
+        </div>
+        <div class="column is-full-width is-centered has-text-centered">
+          <video id="r-lateral-video" autoplay controls muted loop playsinline width="100%"
+            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+            <source src="./static/videos/2_lateral.mp4" type="video/mp4">
+          </video>
+          <div class="content is-two-third has-text-centered">
+            <p style="font-size: 1.2em; font-weight: bold;">
+              Random lateral
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-full-width is-centered has-text-centered">
+          <video id="r-lateral-video-2" autoplay controls muted loop playsinline width="100%"
+            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+            <source src="./static/videos/2_lateral2.mp4" type="video/mp4">
+          </video>
+          <div class="content is-two-third has-text-centered">
+            <p style="font-size: 1.2em; font-weight: bold;">
+              Random lateral
+            </p>
+          </div>
+        </div>
+        <div class="column is-full-width is-centered has-text-centered">
+          <video id="apart-video" autoplay controls muted loop playsinline width="100%"
+            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+            <source src="./static/videos/2_leg.mp4" type="video/mp4">
+          </video>
+            <div class="content is-two-third has-text-centered">
+            <p style="font-size: 1.2em; font-weight: bold;">
+              Legs apart
+            </p>
+            </div>
+        </div>
+        <div class="column is-full-width is-centered has-text-centered">
+          <video id="sit-video" autoplay controls muted loop playsinline width="100%"
+            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+            <source src="./static/videos/2_sit.mp4" type="video/mp4">
+          </video>
+          <div class="content is-two-third has-text-centered">
+            <p style="font-size: 1.2em; font-weight: bold;">
+              Sit
+            </p>
+          </div>
+        </div>
+      </div>
       <br />
 
-      <h3 class="title is-4">Terrain</h3>
-      <div class="content has-text-centered">
-        <video id="prone-video" autoplay controls muted loop playsinline width="30%"
-          style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <source src="./static/videos/3_slope_supine.mp4" type="video/mp4">
-          </video>
-          <video id="supine-video" autoplay controls muted loop playsinline width="30%"
+      <h3 class="title is-3" style="text-align: center;">Terrain</h3>
+      <div class="columns is-centered">
+        <div class="column is-full-width is-centered has-text-centered">
+          <video id="slope-supine-video" autoplay controls muted loop playsinline width="100%"
             style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <source src="./static/videos/3_slope_prone.mp4" type="video/mp4">
+            <source src="./static/videos/3_slope_supine.mp4" type="video/mp4">
           </video>
-          <video id="lateral-video" autoplay controls muted loop playsinline width="30%"
+          <div class="content is-two-third has-text-centered">
+            <p style="font-size: 1.2em; font-weight: bold;">
+              Slope supine
+            </p>
+          </div>
+        </div>
+        <div class="column is-full-width is-centered has-text-centered">
+          <video id="slope-prone-video" autoplay controls muted loop playsinline width="100%"
             style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <source src="./static/videos/3_ball.mp4" type="video/mp4">
-          </video><video id="supine-video" autoplay controls muted loop playsinline width="30%"
+            <source src="./static/videos/3_slope_prone.mp4" type="video/mp4">
+          </video>
+          <div class="content is-two-third has-text-centered">
+            <p style="font-size: 1.2em; font-weight: bold;">
+              Slope Prone
+            </p>
+          </div>
+        </div>
+        <div class="column is-full-width is-centered has-text-centered">
+          <video id="ball-video" autoplay controls muted loop playsinline width="100%"
+            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+            <source src="./static/videos/3_ball.mp4" type="video/mp4">
+          </video>
+          <div class="content is-two-third has-text-centered">
+            <p style="font-size: 1.2em; font-weight: bold;">
+              Ball
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-full-width is-centered has-text-centered">
+          <video id="gravel-video" autoplay controls muted loop playsinline width="100%"
             style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
             <source src="./static/videos/3_gravel.mp4" type="video/mp4">
           </video>
-          <video id="lateral-video" autoplay controls muted loop playsinline width="30%"
+          <div class="content is-two-third has-text-centered">
+            <p style="font-size: 1.2em; font-weight: bold;">
+              Gravel
+            </p>
+          </div>
+        </div>
+        <div class="column is-full-width is-centered has-text-centered">
+          <video id="grass-video" autoplay controls muted loop playsinline width="100%"
             style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
             <source src="./static/videos/3_grass.mp4" type="video/mp4">
           </video>
+          <div class="content is-two-third has-text-centered">
+            <p style="font-size: 1.2em; font-weight: bold;">
+              Grass
+            </p>
           </div>
+        </div>
+      </div>
       <br />
 
-      <h3 class="title is-4">Disturbance</h3>
-      <div class="content has-text-centered">
-        <video id="prone-video" autoplay controls muted loop playsinline width="30%"
-          style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <source src="./static/videos/4_load.mp4" type="video/mp4">
-          </video>
-          <video id="supine-video" autoplay controls muted loop playsinline width="30%"
+      <h3 class="title is-3" style="text-align: center;">Disturbance</h3>
+      <div class="columns is-centered">
+        <div class="column is-full-width is-centered has-text-centered">
+          <video id="load-video" autoplay controls muted loop playsinline width="100%"
             style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <source src="./static/videos/4_push.mp4" type="video/mp4">
+            <source src="./static/videos/4_load.mp4" type="video/mp4">
           </video>
-          <video id="lateral-video" autoplay controls muted loop playsinline width="30%"
-            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <source src="./static/videos/4_kick.mp4" type="video/mp4">
-          </video>
+          <div class="content is-two-third has-text-centered">
+            <p style="font-size: 1.2em; font-weight: bold;">
+              5kg load
+            </p>
           </div>
+        </div>
+        <div class="column is-full-width is-centered has-text-centered">
+          <video id="push-video" autoplay controls muted loop playsinline width="100%"
+            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+            <source src="./static/videos/4_push.mp4" type="video/mp4">
+          </video>
+          <div class="content is-two-third has-text-centered">
+            <p style="font-size: 1.2em; font-weight: bold;">
+              Push
+            </p>
+          </div>
+        </div>
+        <div class="column is-full-width is-centered has-text-centered">
+          <video id="impact-video" autoplay controls muted loop playsinline width="100%"
+            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+            <source src="./static/videos/4_kick.mp4" type="video/mp4">
+          </video>
+          <div class="content is-two-third has-text-centered">
+            <p style="font-size: 1.2em; font-weight: bold;">
+              Impact
+            </p>
+          </div>
+        </div>
+      </div>
       <br />
 
-      <h3 class="title is-4">Various Behavior</h3>
-      <div class="content has-text-centered">
-        <video id="lateral-video" autoplay controls muted loop playsinline width="30%"
-          style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <source src="./static/videos/5_push_fall_recovery.mp4" type="video/mp4">
-          </video>
-          <video id="prone-video" autoplay controls muted loop playsinline width="30%"
+      <h3 class="title is-3" style="text-align: center;">Various Behavior</h3>
+      <div class="columns is-centered">
+        <div class="column is-full-width is-centered has-text-centered">
+          <video id="lateral-video" autoplay controls muted loop playsinline width="100%"
             style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <source src="./static/videos/5_supine_walk.mp4" type="video/mp4">
+            <source src="./static/videos/5_push_fall_recovery.mp4" type="video/mp4">
           </video>
-          <video id="supine-video" autoplay controls muted loop playsinline width="30%"
-            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <source src="./static/videos/5_prone_walk.mp4" type="video/mp4">
-          </video>
+          <div class="content is-two-third has-text-centered">
+            <p style="font-size: 1.2em; font-weight: bold;">
+              Push recovery and fall recovery
+            </p>
           </div>
+        </div>
+        <div class="column is-full-width is-centered has-text-centered">
+          <video id="prone-video" autoplay controls muted loop playsinline width="100%"
+              style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+            <source src="./static/videos/5_supine_walk.mp4" type="video/mp4">
+          </video>
+          <div class="content is-two-third has-text-centered">
+            <p style="font-size: 1.2em; font-weight: bold;">
+              Walk after supine recovery
+            </p>
+          </div>
+        </div>
+        <div class="column is-full-width is-centered has-text-centered">
+          <video id="supine-video" autoplay controls muted loop playsinline width="100%"
+              style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+            <source src="./static/videos/5_prone_walk.mp4" type="video/mp4">
+          </video>
+          <div class="content is-two-third has-text-centered">
+            <p style="font-size: 1.2em; font-weight: bold;">
+              Walk after prone recovery
+            </p>
+          </div>
+        </div>
+      </div>
       <br />
       
-      <h3 class="title is-4">High Success rate</h3>
-      <div class="content has-text-centered">
-        <video id="lateral-video" autoplay controls muted loop playsinline width="30%"
-          style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <source src="./static/videos/6_prone.mp4" type="video/mp4">
-        </video>
-        <video id="prone-video" autoplay controls muted loop playsinline width="30%"
-          style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
-          <source src="./static/videos/6_supine.mp4" type="video/mp4">
-        </video>
+      <h3 class="title is-3" style="text-align: center;">High Success Rate</h3>
+      <div class="columns is-centered">
+        <div class="column is-full-width is-centered has-text-centered">
+          <video id="lateral-video" autoplay controls muted loop playsinline width="100%"
+            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+            <source src="./static/videos/6_prone.mp4" type="video/mp4">
+          </video>
+          <div class="content is-two-third has-text-centered">
+            <p style="font-size: 1.2em; font-weight: bold;">
+              20 successive prone fall recovery trials with 100% success rate
+            </p>
+          </div>
+        </div>
+        <div class="column is-full-width is-centered has-text-centered">
+          <video id="prone-video" autoplay controls muted loop playsinline width="100%"
+            style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;">
+            <source src="./static/videos/6_supine.mp4" type="video/mp4">
+          </video>
+          <div class="content is-two-third has-text-centered">
+          <p style="font-size: 1.2em; font-weight: bold;">
+            20 successive supine fall recovery trials with 100% success rate
+          </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -375,7 +544,7 @@
       <div class="column is-8">
         <div class="content">
           <p>
-            Page template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>.
+            Page template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a> and <a href="https://robot-parkour.github.io/">Robot Parkour Learning</a>.
           </p>
           <p>
             This website is licensed under a <a rel="license"
