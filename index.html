@@ -117,15 +117,16 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <!-- <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+              <span class="link-block">
+                <a href="./paper.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
                   <span>Paper</span>
                 </a>
-              </span> -->
+              </span>
+              <!-- Arxiv Link. -->
               <span class="link-block">
                 <a href="https://arxiv.org"
                    class="external-link button is-normal is-rounded is-dark">
@@ -156,7 +157,7 @@
                 </a>
               </span>
               <!-- Code Link. -->
-              <!-- <span class="link-block">
+              <span class="link-block">
                 <a href="https://github.com"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -164,7 +165,7 @@
                   </span>
                   <span>Code(Coming Soon)</span>
                   </a>
-              </span> -->
+              </span>
               <!-- Dataset Link. -->
               <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
@@ -198,48 +199,30 @@
   </div>
 </section>
 
+<hr style="margin-left: 5%; margin-right: 5%;">
 
 <!-- Abstract. -->
-<!-- <section class="hero teaser">
+<section class="hero teaser">
   <div class="hero-body">
-    <div class="container is-max-desktop">
+    <div class="container is-fluid"></div>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
+          <h2 class="title is-2">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              We present the first method capable of photorealistically reconstructing a non-rigidly
-              deforming scene using photos/videos captured casually from mobile phones.
+              Humanoid robots encounter considerable difficulties in autonomously recovering from falls, especially within dynamic and unstructured environments. Conventional control methodologies are often inadequate in addressing the complexities associated with high-dimensional dynamics and the contact-rich nature of fall recovery. Meanwhile, reinforcement learning techniques are hindered by issues related to sparse rewards, intricate collision scenarios, and discrepancies between simulation and real-world applications. 
             </p>
             <p>
-              Our approach augments neural radiance fields
-              (NeRF) by optimizing an
-              additional continuous volumetric deformation field that warps each observed point into a
-              canonical 5D NeRF.
-              We observe that these NeRF-like deformation fields are prone to local minima, and
-              propose a coarse-to-fine optimization method for coordinate-based models that allows for
-              more robust optimization.
-              By adapting principles from geometry processing and physical simulation to NeRF-like
-              models, we propose an elastic regularization of the deformation field that further
-              improves robustness.
-            </p>
-            <p>
-              We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-              photos/videos into deformable NeRF
-              models that allow for photorealistic renderings of the subject from arbitrary
-              viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-              using a
-              rig with two mobile phones that take time-synchronized photos, yielding train/validation
-              images of the same pose at different viewpoints. We show that our method faithfully
-              reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-              fidelity.
+              In this study, we introduce a multi-stage curriculum learning framework, termed HiFAR. This framework employs a staged learning approach that progressively incorporates increasingly complex and high-dimensional recovery tasks, thereby facilitating the robot's acquisition of efficient and stable fall recovery strategies. Furthermore, it enables the robot to adapt its policy to effectively manage real-world fall incidents. We assess the efficacy of the proposed method using a real humanoid robot, showcasing its capability to autonomously recover from a diverse range of falls with high success rates, rapid recovery times, robustness, and generalization. 
             </p>
           </div>
         </div>
       </div>
       </div>
       </div>
-</section> -->
+</section>
+
+<hr style="margin-left: 5%; margin-right: 5%;">
 
 
 <section class="hero teaser">
@@ -469,6 +452,14 @@
       <br />
 
       <h3 class="title is-3" style="text-align: center;">Various Behavior</h3>
+      <!-- <div class="content is-two-third has-text-centered">
+        <p>
+          The robot uses ankle and hip strategies for minor perturbations and recovery steps for stronger pushes. If falling, it transitions to a safe posture before recovering. 
+        <p>
+        <p>
+          After standing up, the robot stabilizes in a standard stance, enabling seamless transition into locomotion.
+        </p>
+      </div> -->
       <div class="columns is-centered">
         <div class="column is-full-width is-centered has-text-centered">
           <video id="lateral-video" autoplay controls muted loop playsinline width="100%"
@@ -507,6 +498,11 @@
       <br />
       
       <h3 class="title is-3" style="text-align: center;">High Success Rate</h3>
+      <!-- <div class="content is-two-third has-text-centered">
+        <p>
+          Our method achieves rapid and reliable fall recovery with a 100% success rate.
+        </p>
+      </div> -->
       <div class="columns is-centered">
         <div class="column is-full-width is-centered has-text-centered">
           <video id="lateral-video" autoplay controls muted loop playsinline width="100%"
@@ -535,9 +531,10 @@
   </div>
 </section>
 
+<!-- <hr style="margin-left: 5%; margin-right: 5%; margin-top: 0.1rem; margin-bottom: 0.1rem;">
 
-<!-- <section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
+<section class="section" id="BibTeX">
+  <div class="container is-fluid">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{park2021nerfies,
   author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
